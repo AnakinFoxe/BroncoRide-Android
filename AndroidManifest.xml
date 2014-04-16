@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.broncorider"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.BroncoRide.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.BroncoRide.DisplaySignUpProgress"
+            android:label="@string/title_activity_display_sign_up_progress"
+            android:parentActivityName="com.BroncoRide.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.broncorider.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.BroncoRide.DisplaySignUpCmp"
+            android:label="@string/title_activity_display_sign_up_cmp" >
+        </activity>
+        <!--
+             android:parentActivityName="com.broncorider.DisplaySignUpProgress" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.broncorider.DisplaySignUpProgress" />
+        -->
+        <activity
+            android:name="com.BroncoRide.DisplaySignUpProfile"
+            android:label="@string/title_activity_display_sign_up_profile"
+            android:parentActivityName="com.BroncoRide.DisplaySignUpProgress" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.broncorider.DisplaySignUpProgress" />
+        </activity>
+        <activity
+            android:name="com.BroncoRide.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:parentActivityName="com.BroncoRide.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.BroncoRide.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.BroncoRide.CreateEvent"
+            android:label="@string/title_activity_create_event"
+            android:parentActivityName="com.BroncoRide.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.BroncoRide.HomeActivity" />
+        </activity>
+        
+        <!--  
+        <meta-data
+		    android:name="com.google.android.maps.v2.API_KEY"
+		    android:value="AIzaSyDYX20AXKIwoaTWYB9DyGMC09FAKB54rkw"/>
+		    -->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.BroncoRide.DisplaySignUpProfile$PlaceholderFragment" >
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:hint="@string/et_password">
+
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_password2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:layout_below="@id/et_password"
+        android:hint="@string/et_password2" />
+
+    
+    <!--  
+    <EditText
+        android:id="@+id/et_firstname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:hint="@string/et_firstname" />
+
+    <EditText
+        android:id="@+id/et_lastname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_firstname"
+        android:hint="@string/et_lastname" /> -->
+    
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/et_password2" 
+        android:orientation='horizontal' >
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rb_male" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_female" />
+    </RadioGroup>
+    
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password2"
+        android:layout_toRightOf="@id/rg_gender"
+        android:hint="@string/et_age" />
+    
+    <EditText
+        android:id="@+id/et_home_addr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/et_age"
+        android:ems="10"
+        android:inputType="textPostalAddress" 
+        android:hint="@string/et_home_addr" />
+    
+    <LinearLayout android:id="@+id/ll_home_postal"
+    	android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/et_home_addr">
+
+        <EditText
+	        android:id="@+id/et_home_city"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".70"
+	        android:ems="10"
+	        android:inputType="textPostalAddress" 
+	        android:hint="@string/et_home_city" />
+
+        <EditText
+	        android:id="@+id/et_home_state"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".30"
+	        android:ems="10"
+	        android:inputType="textPostalAddress" 
+	        android:hint="@string/et_home_state" />
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/et_dest_addr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ll_home_postal"
+        android:ems="10"
+        android:hint="@string/et_dest_addr"
+        android:inputType="textPostalAddress" />
+    
+    <LinearLayout android:id="@+id/ll_dest_postal"
+    	android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/et_dest_addr" >
+
+        <EditText
+	        android:id="@+id/et_dest_city"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".70"
+	        android:ems="10"
+	        android:inputType="textPostalAddress" 
+	        android:hint="@string/et_dest_city" />
+
+        <EditText
+	        android:id="@+id/et_dest_state"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".30"
+	        android:ems="10"
+	        android:inputType="textPostalAddress" 
+	        android:hint="@string/et_dest_state" />
+    </LinearLayout>
+    
+    <CheckBox android:id="@+id/cb_car" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@id/ll_dest_postal" 
+        android:layout_below="@id/ll_dest_postal"
+        android:text="@string/cb_car"/>
+    
+    
+    <LinearLayout android:id="@+id/ll_age"
+    	android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/cb_car" >
+
+        <EditText
+	        android:id="@+id/et_drv_age"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".50"
+	        android:hint="@string/et_drv_age" />
+
+        <EditText
+	        android:id="@+id/et_car_year"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".50"
+	        android:hint="@string/et_car_year" />
+    </LinearLayout>
+    
+    <LinearLayout 
+    	android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/ll_age" >
+
+        <EditText
+	        android:id="@+id/et_car_model"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".50"
+	        android:hint="@string/et_car_model" />
+
+        <EditText
+	        android:id="@+id/et_car_seats"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".50"
+	        android:hint="@string/et_car_seats" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_vcode_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rg_gender"
+        android:layout_alignParentBottom="true"
+        android:onClick="sendProfile"
+        android:text="@string/btn_profile_submit" />
+    
+
+</RelativeLayout>

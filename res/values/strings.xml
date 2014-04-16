@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bronco Ride</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- MainActivity -->
+    <string name="signup_email">Your Email</string>
+    <string name="button_signup">Sign Up</string>
+    <string name="signin_password">Your Password</string>
+    <string name="btn_signin">Sign In</string>
+
+    <!-- DisplaySignUpProgress -->
+    <string name="title_activity_display_sign_up_progress">Verification</string>
+    <string name="et_signup_vcode">Enter Verification Code</string>
+    <string name="btn_vcode_submit">Submit</string>
+    <string name="tv_welcome">Welcome!</string>
+
+    <!-- DisplaySignUpProfile -->
+    <string name="title_activity_display_sign_up_profile">Your Profile</string>
+    <string name="et_password">Password</string>
+    <string name="et_password2">Confirm Password</string>
+    <string name="et_firstname">First Name</string>
+    <string name="et_lastname">Last Name</string>
+    <string name="rb_male">Male</string>
+    <string name="rb_female">Female</string>
+    <string name="et_age">Age</string>
+    <string name="et_home_addr">Home Address</string>
+    <string name="et_home_city">City</string>
+    <string name="et_home_state">State</string>
+    <string name="et_dest_addr">School Address</string>
+    <string name="et_dest_city">City</string>
+    <string name="et_dest_state">State</string>
+    <string name="cb_car">Own a Car?</string>
+    <string name="et_drv_age">Driving Age</string>
+    <string name="et_car_year">Year of Car</string>
+    <string name="et_car_model">Car Model</string>
+    <string name="et_car_seats">Seat Num</string>
+    <string name="btn_profile_submit">Submit</string>
+
+    <!-- DisplaySignUpComplete -->
+    <string name="title_activity_display_sign_up_cmp">Done!</string>
+    <string name="et_signup_result">Result Here!</string>
+
+    <!-- Home -->
+    <string name="title_activity_home">Bronco Ride</string>
+    <string name="btn_driver">"I'm driving!"</string>
+    <string name="btn_passenger">"I need a ride"</string>
+    
+    <!-- Create Event -->
+    <string name="title_activity_create_event">Event</string>
+    <string name="btn_start_time">Start Time</string>
+    <string name="btn_end_time">End Time</string>
+
+</resources>
