@@ -40,7 +40,7 @@
              android:parentActivityName="com.broncorider.DisplaySignUpProgress" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.broncorider.DisplaySignUpProgress" />
+                android:value="com.broncorider.DisplaySignUpProgress" />
         -->
         <activity
             android:name="com.BroncoRide.DisplaySignUpProfile"
